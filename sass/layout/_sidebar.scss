@@ -1,0 +1,127 @@
+.hero {
+    padding: 40px 0px 50px;
+    @include responsive(big-table) {
+        padding: 0px 0px 30px;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive(phone) {
+            flex-direction: column;
+        }
+    }
+}
+
+.hero__wrapper {
+
+}
+.hero__title {
+    width: 100%;
+    max-width: 674px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.14;
+    letter-spacing: 0.56px;
+    @include responsive(laptop) {
+        font-size: 45px;
+    }
+    @include responsive(big-table) {
+        font-size: 33px;
+    }
+    @include responsive(table) {
+        font-size: 25px;
+    }
+    @include responsive(table) {
+        margin-bottom: 15px;
+    }
+
+    img {
+        width: 7%;
+        height: auto;   
+    }
+}
+.hero__inner-wrapper {
+    width: 100%;
+    max-width: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @include responsive(big-table) {
+    max-width: 350px;
+    }
+    @include responsive(table) {
+        max-width: 250px;
+    }
+    @include responsive(table) {
+        margin-bottom: 24px;
+    }
+
+}
+.hero__text {
+    font-size: 23px;
+    line-height: 1.4;
+    letter-spacing: 0.48;
+    @include responsive(big-table) {
+        font-size: 18px;
+    }
+    @include responsive(table) {
+        font-size: 13px;
+    }
+
+}
+.hero__star {
+    @include responsive(table) {
+        width: 10px;
+        height: 10px;
+    }
+
+
+}
+.hero__btn-wrapper {
+    display: flex;
+
+}
+.hero__black-btn {
+    background-color: $color-text;
+    color: $color-white;
+    border: 1px solid $color-text;
+    @include responsive(big-table) {
+        padding: 10px 25px;
+    }
+    @include responsive(table) {
+        padding: 8px 15px;
+    }
+
+
+    
+}
+
+.hero__white-btn {
+    background-color: transparent;
+    color: $color-text;
+    border: 1px solid $color-text;
+    @include responsive(big-table) {
+        padding: 10px 25px;
+    }
+    @include responsive(table) {
+        padding: 8px 15px;
+    }
+
+
+}
+.hero__img-wrapper {
+    display: block;
+    margin-right: 20px;
+    @include responsive(phone) {
+        margin-top: 20px;
+    }
+}
+.hero__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
