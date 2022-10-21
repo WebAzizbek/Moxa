@@ -161,3 +161,55 @@
     }
     
 }
+
+// MASSIVE STYLES
+.box-massive {
+    background-color: $color-text;
+    overflow: hidden;
+    transform: rotate(-4.93deg);
+    margin-top: 40px;
+    @include responsive(laptop) {
+        display: none;
+    }
+
+}
+.massive {
+    position: relative;
+    top: 15px;
+    background-color: $color-text;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    transform: rotate(-4.93deg);
+    animation: tras 50s linear infinite;
+
+}
+@keyframes tras {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(2000px);
+    }
+    50.00001% {
+        transform: translate(-2000px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+.massive__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 45px;
+}
+.massive__text {
+    font-size: 18px;
+    line-height: 1.77;
+    color: $color-white;
+    margin-right: 10px;
+}
