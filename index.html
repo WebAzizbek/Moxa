@@ -70,8 +70,18 @@
                         <p class="hero__text">WEBFLOW</p>
                     </div>
                     <div class="hero__btn-wrapper">
-                        <a class="hero__black-btn site-btn" href="#">Got a project?</a>
-                        <a class="hero__white-btn site-btn" href="#">Let's talk.</a>
+                        <a class="hero__black-btn site-btn" href="#"><span>Got a project?</span></a>
+                        <script>
+                            const btnS = document.querySelector('.site-btn');
+                            btnS.onmousemove = function(e){
+                                const x = e.pageX - btnS.offsetLeft;
+                                const y = e.pageY - btnS.offsetTop;
+            
+                                btnS.style.setProperty('--x', x + 'px');
+                                btnS.style.setProperty('--y', y + 'px');
+                            }
+                        </script>
+                        <a class="hero__white-btn site-btn" href="#"><span>Let's talk.</span></a>
                     </div>
                 </div>
                 <div class="hero__img-wrapper">
