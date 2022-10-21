@@ -9,12 +9,34 @@
 .header__btn {
     padding: 7px 24px;
     border: 1px solid $color-text;
-    transition: all 0.3s;
-    &:hover {
-        background-color: $color-text;
-        color: $color-bg;
-    }
+    box-shadow: 1px 1px 8px 0px #000;
     @include responsive(phone) {
         display: none;
+    }
+
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: var(--y);
+        left: var(--y);
+        transform: translate(-50%, -50%);
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background: $color-primary;
+        transition: width 0.5s, height 0.5s;
+    }
+    &:hover::before {
+        width: 300px;
+        height: 300px;
+
     }
 }
