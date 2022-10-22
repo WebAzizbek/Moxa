@@ -595,3 +595,188 @@
 }
 
 
+// PORTFOLIO STYLES
+.portfolio {
+    margin-bottom: 120px;
+    @include responsive(laptop) {
+        margin-bottom: 100px;
+    }
+    @include responsive(table) {
+        margin-bottom: 80px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 40px;
+    }
+    .container {
+    }
+    .awards__logo {
+    }
+    .awards__title {
+    }
+    .awards__text {
+    }
+}
+.portfolio__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 96px;
+    @include responsive(laptop) {
+        row-gap: 85px;
+    }
+    @include responsive(table) {
+        row-gap: 30px;
+    }
+
+}
+.portfolio__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include responsive(phone) {
+        flex-direction: column;
+        text-align: center;
+    }
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        @include responsive(phone) {
+            flex-direction: column;
+            position: relative;
+            left: -15px;
+        }
+    }
+    &:first-child {
+        .portfolio__title {
+            width: 100%;
+            max-width: 517px;
+        }
+    }
+    &:nth-child(2) {
+        .portfolio__title {
+            width: 100%;
+            max-width: 481px;
+            position: relative;
+            left: 12px;
+        }
+    }
+    &:last-child {
+        .portfolio__title {
+            width: 100%;
+            max-width: 447px;
+            position: relative;
+            left: 12px;
+        }
+    }
+}
+.portfolio__img-wrapper {
+    overflow: hidden;
+    display: block;
+}
+.portfolio__img {
+    display: block;
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.2)
+    }
+    @include responsive(phone) {
+        &:hover {
+            transform: scale(1)
+        }
+    }
+    @include responsive(phone) {
+        margin-bottom: 10px;
+    }
+}
+.portfolio__text-wrapper {
+    width: 100%;
+    max-width: 517px;
+}
+.portfolio__btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.77;
+    letter-spacing: 1.44;
+    color: $color-white;
+    padding: 0px 8px;
+    background-color: $color-primary;
+    display: inline-block;
+    margin-bottom: 30px;
+    border: 2px solid $color-primary;
+    transition: all 0.3s;
+    &:hover {
+        background-color: transparent;
+        color: $color-primary;
+    }
+    @include responsive(table) {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    @include responsive(phone) {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
+.portfolio__title {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.24;
+    letter-spacing: 1.44;
+    margin-bottom: 50px;
+    @include responsive(laptop) {
+        font-size: 35px;
+    }
+    @include responsive(table) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    @include responsive(phone) {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+}
+.portfolio__link {
+    font-size: 20px;
+    line-height: 1.6;
+    transition: all 0.2s;
+    &:hover {
+        color: $color-primary;
+    }
+    @include responsive(table) {
+        font-size: 12px;
+    }
+    @include responsive(phone) {
+        font-size: 15px;
+    }
+}
+
+.portfolio__item:first-child {
+    .portfolio__img-wrapper {
+        margin-right: 25px;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}
+.portfolio__item:nth-child(2) {
+    .portfolio__img-wrapper {
+        margin-left: 25px;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}
+.portfolio__item:nth-child(3) {
+    .portfolio__img-wrapper {
+        margin-right: 25px;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}
+.portfolio__item:last-child {
+    .portfolio__img-wrapper {
+        margin-left: 25px;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}
