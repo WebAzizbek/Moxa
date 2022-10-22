@@ -213,3 +213,226 @@
     color: $color-white;
     margin-right: 10px;
 }
+
+// LEAD STYLES
+.lead {
+    margin-top: 130px;
+    margin-bottom: 122px;
+    @include responsive(laptop) {
+        margin-top: 30px;
+    }
+    @include responsive(big-table) {
+        margin-bottom: 100px;
+    }
+    @include responsive(table) {
+        margin-top: 0px;
+        margin-bottom: 70px;
+    }
+    @include responsive(phone) {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    .container {
+    }
+}
+
+.lead__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 122px;
+    @include responsive(big-table) {
+        margin-bottom: 60px;
+    }
+    @include responsive(table) {
+        margin-bottom: 35px;
+    }
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+}
+.lead__title-box {
+    margin-right: 20px;
+}
+.lead__top-title-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    @include responsive(big-table) {
+        margin-bottom: 15px;
+    }
+    @include responsive(table) {
+        margin-bottom: 5px;
+    }
+}
+.lead__top-title {
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48;
+    @include responsive(big-table) {
+        font-size: 20px;
+    }
+    @include responsive(table) {
+        font-size: 15px;
+    }
+}
+.lead__top-img {
+    object-fit: contain;
+    object-position: center;
+    margin: 0 8px;
+    animation: star 5s linear infinite;
+}
+.lead__title {
+    width: 100%;
+    max-width: 351px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.14;
+    letter-spacing: 0.56;
+    @include responsive(big-table) {
+        font-size: 40px;
+    }
+    @include responsive(table) {
+        font-size: 29px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 6px;
+    }
+}
+.lead__text-box {
+
+}
+.lead__text-top {
+    width: 100%;
+    max-width: 598px;
+    font-size: 31px;
+    line-height: 1.29;
+    letter-spacing: 0.64;
+    margin-bottom: 36px;
+    @include responsive(big-table) {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    @include responsive(table) {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 8px;
+    }
+}
+.lead__center-text {
+    width: 100%;
+    max-width: 604px;
+    font-size: 18px;
+    line-height: 1.77;
+    margin-bottom: 27px;
+    @include responsive(big-table) {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    @include responsive(table) {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+}
+.lead__age-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lead__age-box {
+
+}
+.lead__age-top-text {
+    font-size: 12px;
+    line-height: 1.33;
+    color: $color-primary;
+    margin-bottom: 9px;
+    @include responsive(big-table) {
+        font-size: 10px;
+        margin-bottom: 7px;
+    }
+    @include responsive(table) {
+        margin-bottom: 2px;
+    }
+}
+.lead__age-bottom-text {
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48;
+    @include responsive(big-table) {
+        font-size: 20px;
+    }
+    @include responsive(table) {
+        font-size: 15px;
+    }
+}
+.lead__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    border: 2px solid #332f29;
+    @include responsive(table) {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    @include responsive(phone) {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
+.lead__item {
+    padding: 23px 72px 26px 74px;
+    transition: all 0.3s;
+    &:first-child {
+        border-right: 2px solid $color-text;
+        @include responsive(phone) {
+            border-right: none;
+            border-bottom: 2px solid $color-text;
+        }
+    }
+    &:nth-child(2) {
+        @include responsive(table) {
+            grid-area: 1/3/3/2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        @include responsive(phone) {
+            grid-area: auto;
+            display: block;
+        }
+    }
+    &:last-child {
+        border-left: 2px solid $color-text;
+        @include responsive(table) {
+            border-top: 2px solid $color-text;
+            border-right: 2px solid $color-text;
+            border-left: none;
+        }
+        @include responsive(phone) {
+            border-right: none;
+        }
+    }
+    &:hover {
+        background-color: $color-text;
+        color: $color-white;
+    }
+}
+.lead__num {
+    font-size: 56px;
+    line-height: 1.14;
+    text-align: center;
+    margin-bottom: 11px;
+    @include responsive(big-table) {
+        font-size: 45px;
+    }
+}
+.lead__years {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.28;
+    text-align: center;
+    text-transform: uppercase;
+    @include responsive(big-table) {
+        font-size: 12px;
+    }
+}
