@@ -183,7 +183,7 @@
     width: 100%;
     overflow: hidden;
     transform: rotate(-4.93deg);
-    animation: tras 50s linear infinite;
+    animation: tras 25s linear infinite;
 
 }
 @keyframes tras {
@@ -203,9 +203,13 @@
 .massive__box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin-right: 45px;
+}
+.massive__img {
+    animation: star 2s linear infinite;
+    margin-left: 10px;
 }
 .massive__text {
     font-size: 18px;
