@@ -7,12 +7,21 @@
     <title>Moxa || Home || Akramjonov</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./images/png/site-favi.png" type="image/x-icon">
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.mincss"integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="crossorigin="annymous" referrerpolicy="no-referrer" />
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+
+    <!-- LOADER -->
+    <div class="loader">
+        <img src="https://acegif.com/wp-content/uploads/loading-78.gif" alt="">
+    </div>
+
+
     <!-- HEADER -->
     <header class="header">
         <div class="header__container">
@@ -50,6 +59,27 @@
         </div>
     </header>
     <!-- HEADER END -->
+
+    <!-- RIGHT NAV REMOVE -->
+    <nav class="right-nav remove">
+        <button class="right-nav-btn">
+            <img src="./images/png/cancel.png" alt="" width="20" height="20">
+        </button>
+        <ul class="header__list remove-list">
+            <!-- ITEM 1 -->
+            <li class="header__item">
+                <a class="header__link" href="#">Home</a>
+            </li>
+            <!-- ITEM 2 -->
+            <li class="header__item">
+                <a class="header__link" href="#">About</a>
+            </li>
+            <!-- ITEM 3 -->
+            <li class="header__item">
+                <a class="header__link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
     
     <!-- MAIN -->
     <main class="main">
@@ -251,5 +281,7 @@
         
     </main>
     <!-- MAIN END -->
+
+    <script src="./app.js"></script>
 </body>
 </html>

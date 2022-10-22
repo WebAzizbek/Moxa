@@ -522,7 +522,7 @@
     border: 2px solid $color-text;
     transition: all 0.3s;
     &:hover {
-        background-color: $color-text;
+        background-image: linear-gradient($color-text, $color-primary);
         color: $color-white;
     }
     @include responsive(table) {
@@ -593,3 +593,5 @@
         font-size: 15px;
     }
 }
+
+
