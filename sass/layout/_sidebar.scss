@@ -1155,12 +1155,18 @@
     font-size: 23px;
     line-height: 1.4;
     letter-spacing: 0.48px;
-    padding: 12px 15px;
+    padding: 8px 11px;
+    border: 2px solid #131416;
+    transition: all 0.3s;
+    &:hover {
+        background-color: transparent;
+        color: #131416;
+    }
     @include responsive(big-table) {
-        padding: 8px 11px;
+        padding: 4px 7px;
     }
     @include responsive(table) {
-        padding: 10.5px 16px;
+        padding: 6.5px 12px;
         font-size: 13px;
     }
 }
