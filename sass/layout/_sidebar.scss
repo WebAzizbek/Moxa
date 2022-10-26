@@ -906,3 +906,164 @@
     transition: all 0.3s;
     display: block;
 }
+
+// ARTICLES STYLES
+.articles {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 136px;
+    .container {
+    }
+    .awards__logo {
+    }
+    .awards__title {
+    }
+    .awards__text {
+        margin-bottom: 95px;
+        @include responsive(big-table) {
+            margin-bottom: 50px;
+        }
+        @include responsive(table) {
+            margin-bottom: 30px;
+        }
+        @include responsive(phone) {
+            margin-bottom: 15px;
+        }
+    }
+    .articles__img {
+        position: absolute;
+        top: 575px;
+        right: -140px;
+        z-index: -1;
+        @include responsive(big-laptop) {
+            display: none;
+        }
+    }
+    @include responsive(big-table) {
+        margin-bottom: 50px;
+    }
+    @include responsive(table) {
+        margin-bottom: 40px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 30px;
+    }
+    
+}
+
+.articles__list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 94px;
+    background-color: $color-bg;
+    @include responsive(big-table) {
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    @include responsive(table) {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    @include responsive(phone) {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+.articles__item {
+    border: 2px solid $color-black;
+    padding: 0px 53px 10px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(2) .articles__title {
+        width: 100%;
+        max-width: 420px;
+    }
+    &:last-child .articles__title {
+        width: 100%;
+        max-width: 400px;
+    }
+    transition: all 0.3s;
+    &:hover {
+        background-image: linear-gradient(#76BA99, #ADCF9F);
+    }
+    @include responsive(big-table) {
+        padding: 0px 14px 8px 14px;
+    }
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+}
+.articles__title-wrapper {
+    margin-right: 20px;
+    @include responsive(table) {
+        margin-right: 10px;
+    }
+    @include responsive(phone) {
+        margin-right: 0;
+    }
+}
+.articles__date {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.28px;
+    color: $color-primary;
+    @include responsive(big-table) {
+        font-size: 13px;
+    }
+    @include responsive(table) {
+        font-size: 10px;
+    }
+    @include responsive(phone) {
+        text-align: center;
+    }
+}
+.articles__title {
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48px;
+    @include responsive(big-table) {
+        font-size: 20px;
+    }
+    @include responsive(table) {
+        font-size: 15px;
+    }
+    @include responsive(phone) {
+        text-align: center;
+    }
+}
+.articles__text {
+    width: 100%;
+    max-width: 457px;
+    font-size: 16px;
+    line-height: 1.5;
+    @include responsive(big-table) {
+        font-size: 14px;
+    }
+    @include responsive(table) {
+        font-size: 12px;
+    }
+    @include responsive(phone) {
+        text-align: center;
+    }
+}
+.articles__btn {
+    display: block;
+    border: 2px solid $color-text;
+    background-color: $color-text;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: $color-white;
+    padding: 12px 0px 14px 0px;
+    transition: all 0.3s;
+    &:hover {
+        background-color: transparent;
+        color: $color-text;
+    }
+    @include responsive(table) {
+        font-size: 15px;
+    }
+}
