@@ -1112,12 +1112,13 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     @include responsive(phone) {
         justify-content: center;
     }
 }
 .subscribe__input {
-    width: 60%;
+    width: 70%;
     font-weight: 400;
     padding: 16px 24px;
     outline: none;
