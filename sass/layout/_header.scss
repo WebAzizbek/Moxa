@@ -9,7 +9,6 @@
 .header__btn {
     padding: 7px 24px;
     border: 1px solid $color-text;
-    box-shadow: 1px 1px 8px 0px #000;
     @include responsive(phone) {
         display: none;
     }
