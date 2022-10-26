@@ -1067,3 +1067,100 @@
         font-size: 15px;
     }
 }
+
+// SUBSCRIBE STYLES
+.subscribe {
+    padding: 60px 0;
+    background-color: #e6e3de;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(phone) {
+            flex-direction: column;
+        }
+    }
+    @include responsive(big-table) {
+        padding: 50px 0;
+    }
+    @include responsive(table) {
+        padding: 40px 0;
+    }
+}
+
+.subscribe__title {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.4;
+    letter-spacing: 0.48px;
+    @include responsive(big-table) {
+        font-size: 20px;
+    }
+    @include responsive(table) {
+        font-size: 16px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 15px;
+    }
+}
+.subscribe__input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.subscribe__form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @include responsive(phone) {
+        justify-content: center;
+    }
+}
+.subscribe__input {
+    width: 60%;
+    font-weight: 400;
+    padding: 16px 24px;
+    outline: none;
+    border: 2px solid $color-text;
+    margin-right: 24px;
+    @include responsive(big-table) {
+        padding: 12px 20px;
+    }
+    @include responsive(table) {
+        padding: 8px 16px;
+    }
+    @include responsive(phone) {
+        width: 200px;
+    }
+    @include responsive(litle-phone) {
+        width: 160px;
+    }
+    &::placeholder {
+        font-size: 23px;
+        line-height: 1.4;
+        letter-spacing: 0.48px;
+        color: $color-text;
+        @include responsive(big-table) {
+            font-size: 20px;
+        }
+        @include responsive(table) {
+            font-size: 13px;
+        }
+    }
+}
+.subscribe__btn {
+    background-color: #131416;
+    color: $color-white;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.4;
+    letter-spacing: 0.48px;
+    padding: 12px 15px;
+    @include responsive(big-table) {
+        padding: 8px 11px;
+    }
+    @include responsive(table) {
+        padding: 10.5px 16px;
+        font-size: 13px;
+    }
+}
