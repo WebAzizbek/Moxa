@@ -816,7 +816,7 @@
 .services__item {
     padding: 34px 49px 30px 34px;
     border: 2px solid $color-text;
-    transition: all 0.2s;
+    transition: all 0.3s;
     &:hover {
         background-color: $color-text;
         color: $color-bg;
@@ -851,4 +851,58 @@
     @include responsive(table) {
         font-size: 13px; 
     }
+}
+
+.customer {
+    margin-bottom: 123px;
+    @include responsive(big-table) {
+        margin-bottom: 80px;
+    }
+    @include responsive(table) {
+        margin-bottom: 40px;
+    }
+    .container {
+    }
+    .awards__logo {
+    }
+    .awards__title {
+    }
+    .awards__text {
+    }
+}
+
+.customer__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 32px;
+    @include responsive(table) {
+        gap: 25px;
+    }
+    @include responsive(phone) {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    }
+}
+.customer__item {
+    border: solid 1px #131416;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 43px 0;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #131416;
+        .customer__img {
+            filter: invert(1);
+        }
+    }
+    @include responsive(big-table) {
+        padding: 30px 0;
+    }
+    @include responsive(table) {
+        padding: 25px 0;
+    }
+}
+.customer__img {
+    transition: all 0.3s;
+    display: block;
 }
