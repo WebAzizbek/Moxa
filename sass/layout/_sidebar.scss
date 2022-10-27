@@ -239,21 +239,15 @@
     width: 100%;
     overflow: hidden;
     transform: rotate(-4.93deg);
-    animation: tras 25s linear infinite;
+    animation: tras 100s linear infinite;
 
 }
 @keyframes tras {
-    0% {
-        transform: translate(0px);
+    from {
+        transform: translateX(0);
     }
-    50% {
-        transform: translate(2000px);
-    }
-    50.00001% {
-        transform: translate(-2000px);
-    }
-    100% {
-        transform: translate(0px);
+    to {
+        transform: translateX(-100%);
     }
 }
 .massive__box {
