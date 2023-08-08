@@ -1,0 +1,115 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Bai", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $color-text;
+    background-color: $color-bg;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    margin: 0;
+}
+.header__container {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.site-logo {
+    display: block;
+}
+.site-logo-img {
+    display: block;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+.site-btn {
+    padding: 13px 33px;
+    font-size: 16px;
+    line-height: 1.5;
+    outline: none;
+    display: inline-block;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: var(--y);
+        left: var(--y);
+        transform: translate(-50%, -50%);
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background: $color-primary;
+        transition: width 0.5s, height 0.5s;
+    }
+    &:hover::before {
+        width: 300px;
+        height: 300px;
+
+    }
+}
+.bars-btn {
+    display: none;
+    width: 25px;
+    height: 25px;
+    @include responsive(phone) {
+        display: block;
+    }
+}
+.bars-btn-img {
+    display: block;
+}
+
+/* loader */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.disppear{
+    animation:vanish 1.5s forwards;
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}

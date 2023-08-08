@@ -1,0 +1,60 @@
+// REMOVE
+.toggle {
+    z-index: 2;
+    transform: translateX(10%);
+    transition: all 0.6s ease;
+}
+.remove {
+    transform: translateX(150%);
+    transition: all 0.6s ease;
+    z-index: 2;
+}
+.right-nav {
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $color-text;
+    opacity: 0.9;
+    padding: 2rem;
+    i {
+        filter: invert(1);
+    }
+    a {
+        position: relative;
+        transition: all 0.4s;
+    }
+}
+.right-nav ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right-nav li {
+    font-weight: 700;
+    line-height: 1.16;
+    color: #fff;
+}
+.right-nav li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+}
+.right-nav a {
+    font-size: 2.1rem;
+}
+.right-nav-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 40px;
+    position: static;
+    top: 30px;
+    left: 250px;
+    transition: all 0.2s;
+    filter: invert(1);
+
+}

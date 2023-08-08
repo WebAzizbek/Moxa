@@ -1,0 +1,1224 @@
+.hero {
+    padding: 40px 0px 50px;
+    @include responsive(big-table) {
+        padding: 0px 0px 30px;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive(phone) {
+            flex-direction: column;
+        }
+    }
+}
+
+.hero__title {
+    width: 100%;
+    max-width: 674px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.14;
+    letter-spacing: 0.56px;
+    @include responsive(laptop) {
+        font-size: 45px;
+    }
+    @include responsive(big-table) {
+        font-size: 33px;
+    }
+    @include responsive(table) {
+        font-size: 25px;
+    }
+    @include responsive(table) {
+        margin-bottom: 15px;
+    }
+    img {
+        width: 6%;
+        height: auto; 
+        animation: rotate 12s linear infinite;
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.hero__inner-wrapper {
+    width: 100%;
+    max-width: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @include responsive(big-table) {
+    max-width: 350px;
+    }
+    @include responsive(table) {
+        max-width: 250px;
+    }
+    @include responsive(table) {
+        margin-bottom: 24px;
+    }
+
+}
+.hero__text {
+    font-size: 23px;
+    line-height: 1.4;
+    letter-spacing: 0.48;
+    @include responsive(big-table) {
+        font-size: 18px;
+    }
+    @include responsive(table) {
+        font-size: 13px;
+    }
+
+}
+.hero__star {
+    @include responsive(table) {
+        width: 10px;
+        height: 10px;
+    }
+
+
+}
+.hero__btn-wrapper {
+    display: inline-flex;
+
+}
+.hero__black-btn {
+    background-color: $color-text;
+    color: $color-white;
+    border: 1px solid $color-text;
+    @include responsive(big-table) {
+        padding: 10px 25px;
+    }
+    @include responsive(table) {
+        padding: 8px 15px;
+    }
+
+}
+
+.hero__white-btn {
+    background-color: transparent;
+    color: $color-text;
+    border: 1px solid $color-text;
+    @include responsive(big-table) {
+        padding: 10px 25px;
+    }
+    @include responsive(table) {
+        padding: 8px 15px;
+    }
+
+
+}
+.hero__img-wrapper {
+    // margin-right: 20px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    @include responsive(phone) {
+        margin-top: 20px;
+    }
+}
+.hero__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+    // padding-right: 25px;
+    left: -20px;
+    bottom: -11px;
+
+
+
+
+    
+   border-radius: 50%;
+   z-index: 1;
+    
+}
+@keyframes rotates {
+    from {
+       rotate: 0deg;
+    }
+ 
+    to {
+       rotate: 360deg;
+    }
+ }
+
+
+
+
+
+
+
+.hero__circle-wrapper {
+    position: absolute;
+    animation: rotates 10s linear infinite;
+    top: 50%;
+    left: 50%;
+    .hero__circle-item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 350px;
+        height: 70px;
+        border: 8px solid #e94d35;
+        rotate: calc(var(--i) * 45deg);
+        @include responsive(big-table) {
+            width: 250px;
+            height: 50px;
+            border: 5px solid #e94d35;
+        }
+        @include responsive(table) {
+            width: 200px;
+            height: 40px;
+            border: 3px solid #e94d35;
+        }
+        @include responsive(phone) {
+            width:  55vw;
+            height: 50px;
+            border: 5px solid #e94d35;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes star {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+// MASSIVE STYLES
+.box-massive {
+    background-color: $color-text;
+    overflow: hidden;
+    transform: rotate(-4.93deg);
+    margin-top: 40px;
+    @include responsive(laptop) {
+        display: none;
+    }
+
+}
+.massive {
+    position: relative;
+    top: 15px;
+    background-color: $color-text;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    transform: rotate(-4.93deg);
+    animation: tras 100s linear infinite;
+
+}
+@keyframes tras {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.massive__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: 45px;
+}
+.massive__img {
+    animation: star 2s linear infinite;
+    margin-left: 10px;
+}
+.massive__text {
+    font-size: 18px;
+    line-height: 1.77;
+    color: $color-white;
+    margin-right: 10px;
+}
+
+// LEAD STYLES
+.lead {
+    margin-top: 130px;
+    margin-bottom: 122px;
+    @include responsive(laptop) {
+        margin-top: 30px;
+    }
+    @include responsive(big-table) {
+        margin-bottom: 100px;
+    }
+    @include responsive(table) {
+        margin-top: 0px;
+        margin-bottom: 70px;
+    }
+    @include responsive(phone) {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    .container {
+    }
+}
+
+.lead__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 122px;
+    @include responsive(big-table) {
+        margin-bottom: 60px;
+    }
+    @include responsive(table) {
+        margin-bottom: 35px;
+    }
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+}
+.lead__title-box {
+    margin-right: 20px;
+}
+.lead__top-title-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    @include responsive(big-table) {
+        margin-bottom: 15px;
+    }
+    @include responsive(table) {
+        margin-bottom: 5px;
+    }
+}
+.lead__top-title {
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48;
+    @include responsive(big-table) {
+        font-size: 20px;
+    }
+    @include responsive(table) {
+        font-size: 15px;
+    }
+}
+.lead__top-img {
+    object-fit: contain;
+    object-position: center;
+    margin: 0 8px;
+    animation: star 5s linear infinite;
+}
+.lead__title {
+    width: 100%;
+    max-width: 351px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.14;
+    letter-spacing: 0.56;
+    @include responsive(big-table) {
+        font-size: 40px;
+    }
+    @include responsive(table) {
+        font-size: 29px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 6px;
+    }
+}
+.lead__text-box {
+
+}
+.lead__text-top {
+    width: 100%;
+    max-width: 598px;
+    font-size: 31px;
+    line-height: 1.29;
+    letter-spacing: 0.64;
+    margin-bottom: 36px;
+    @include responsive(big-table) {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    @include responsive(table) {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 8px;
+    }
+}
+.lead__center-text {
+    width: 100%;
+    max-width: 604px;
+    font-size: 18px;
+    line-height: 1.77;
+    margin-bottom: 27px;
+    @include responsive(big-table) {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    @include responsive(table) {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+}
+.lead__age-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lead__age-box {
+
+}
+.lead__age-top-text {
+    font-size: 12px;
+    line-height: 1.33;
+    color: $color-primary;
+    margin-bottom: 9px;
+    @include responsive(big-table) {
+        font-size: 10px;
+        margin-bottom: 7px;
+    }
+    @include responsive(table) {
+        margin-bottom: 2px;
+    }
+}
+.lead__age-bottom-text {
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48;
+    @include responsive(big-table) {
+        font-size: 20px;
+    }
+    @include responsive(table) {
+        font-size: 15px;
+    }
+}
+.lead__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    border: 2px solid #332f29;
+    @include responsive(table) {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    @include responsive(phone) {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
+.lead__item {
+    padding: 23px 72px 26px 74px;
+    transition: all 0.3s;
+    &:first-child {
+        border-right: 2px solid $color-text;
+        @include responsive(phone) {
+            border-right: none;
+            border-bottom: 2px solid $color-text;
+        }
+    }
+    &:nth-child(2) {
+        @include responsive(table) {
+            grid-area: 1/3/3/2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        @include responsive(phone) {
+            grid-area: auto;
+            display: block;
+        }
+    }
+    &:last-child {
+        border-left: 2px solid $color-text;
+        @include responsive(table) {
+            border-top: 2px solid $color-text;
+            border-right: 2px solid $color-text;
+            border-left: none;
+        }
+        @include responsive(phone) {
+            border-right: none;
+        }
+    }
+    &:hover {
+        background-color: $color-text;
+        color: $color-white;
+    }
+}
+.lead__num {
+    font-size: 56px;
+    line-height: 1.14;
+    text-align: center;
+    margin-bottom: 11px;
+    @include responsive(big-table) {
+        font-size: 45px;
+    }
+}
+.lead__years {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.28;
+    text-align: center;
+    text-transform: uppercase;
+    @include responsive(big-table) {
+        font-size: 12px;
+    }
+}
+
+
+// AWARDS STYLES
+.awards {
+    margin-bottom: 120px;
+    @include responsive(laptop) {
+        margin-bottom: 80px;
+    }
+    @include responsive(table) {
+        margin-bottom: 40px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 25px;
+    }
+    .container {
+    }
+}
+
+.awards__logo {
+    object-fit: contain;
+    object-position: center;
+    animation: star 6s linear infinite;
+    margin-bottom: 22px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(table) {
+        margin-bottom: 8px;
+    }
+    @include responsive(phone) {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 2px;
+    }
+}
+.awards__title {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.24;
+    letter-spacing: 1.44;
+    text-align: center;
+    margin-bottom: 9px;
+    @include responsive(table) {
+        font-size: 35px;
+        margin-bottom: 4px;
+    }
+    @include responsive(phone) {
+        font-size: 27px;
+        margin-bottom: 2px;
+    }
+}
+.awards__text {
+    font-size: 18px;
+    line-height: 1.77;
+    letter-spacing: 1.44;
+    text-align: center;
+    margin-bottom: 61px;
+    @include responsive(table) {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+    @include responsive(phone) {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+}
+.awards__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    @include responsive(phone) {
+        row-gap: 14px;
+    }
+}
+.awards__item {
+    padding: 38px 34px 39px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid $color-text;
+    transition: all 0.3s;
+    &:hover {
+        background-image: linear-gradient(#76BA99, #ADCF9F);
+    }
+    @include responsive(table) {
+        padding: 18px 14px 19px 14px;
+    }
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+
+}
+.awards__left-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.awards__num {
+    width: 48px;
+    height: 48px;
+    background-color: $color-primary;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    @include responsive(table) {
+        width: 38px;
+        height: 38px;
+        margin-right: 14px;
+    }
+    @include responsive(phone) {
+        width: 40px;
+        height: 40px;
+        margin-right: 24px;
+    }
+}
+.awards__title-wrapper {
+}
+.awards__top-title {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48;
+    @include responsive(table) {
+        font-size: 17px;
+    }
+    @include responsive(phone) {
+        font-size: 19px;
+    }
+}
+.awards__bottom-title {
+    font-size: 18px;
+    line-height: 1.77;
+    @include responsive(table) {
+        font-size: 12px;
+    }
+    @include responsive(phone) {
+        font-size: 13px;
+    }
+}
+.awards__date {
+    font-size: 16px;
+    line-height: 2;
+    @include responsive(table) {
+        font-size: 11px;
+        padding-left: 10px;
+    }
+    @include responsive(phone) {
+        font-size: 15px;
+    }
+}
+
+
+// PORTFOLIO STYLES
+.portfolio {
+    margin-bottom: 120px;
+    @include responsive(laptop) {
+        margin-bottom: 100px;
+    }
+    @include responsive(table) {
+        margin-bottom: 80px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 40px;
+    }
+    .container {
+    }
+    .awards__logo {
+    }
+    .awards__title {
+    }
+    .awards__text {
+    }
+}
+.portfolio__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 96px;
+    @include responsive(laptop) {
+        row-gap: 85px;
+    }
+    @include responsive(table) {
+        row-gap: 30px;
+    }
+
+}
+.portfolio__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include responsive(phone) {
+        flex-direction: column;
+        text-align: center;
+    }
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        @include responsive(phone) {
+            flex-direction: column;
+            position: relative;
+            left: -15px;
+        }
+    }
+    &:first-child {
+        .portfolio__title {
+            width: 100%;
+            max-width: 517px;
+        }
+    }
+    &:nth-child(2) {
+        .portfolio__title {
+            width: 100%;
+            max-width: 481px;
+            position: relative;
+            left: 12px;
+        }
+    }
+    &:last-child {
+        .portfolio__title {
+            width: 100%;
+            max-width: 447px;
+            position: relative;
+            left: 12px;
+        }
+    }
+}
+.portfolio__img-wrapper {
+    overflow: hidden;
+    display: block;
+}
+.portfolio__img {
+    display: block;
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.2)
+    }
+    @include responsive(phone) {
+        &:hover {
+            transform: scale(1)
+        }
+    }
+    @include responsive(phone) {
+        margin-bottom: 10px;
+    }
+}
+.portfolio__text-wrapper {
+    width: 100%;
+    max-width: 517px;
+}
+.portfolio__btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.77;
+    letter-spacing: 1.44;
+    color: $color-white;
+    padding: 0px 8px;
+    background-color: $color-primary;
+    display: inline-block;
+    margin-bottom: 30px;
+    border: 2px solid $color-primary;
+    transition: all 0.3s;
+    &:hover {
+        background-color: transparent;
+        color: $color-primary;
+    }
+    @include responsive(table) {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    @include responsive(phone) {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
+.portfolio__title {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.24;
+    letter-spacing: 1.44;
+    margin-bottom: 50px;
+    @include responsive(laptop) {
+        font-size: 35px;
+    }
+    @include responsive(table) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    @include responsive(phone) {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+}
+.portfolio__link {
+    font-size: 20px;
+    line-height: 1.6;
+    transition: all 0.2s;
+    &:hover {
+        color: $color-primary;
+    }
+    @include responsive(table) {
+        font-size: 12px;
+    }
+    @include responsive(phone) {
+        font-size: 15px;
+    }
+}
+
+.portfolio__item:first-child {
+    .portfolio__img-wrapper {
+        margin-right: 25px;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}
+.portfolio__item:nth-child(2) {
+    .portfolio__img-wrapper {
+        margin-left: 25px;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}
+.portfolio__item:nth-child(3) {
+    .portfolio__img-wrapper {
+        margin-right: 25px;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}
+.portfolio__item:last-child {
+    .portfolio__img-wrapper {
+        margin-left: 25px;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}
+
+
+// SERVICES STYLES
+
+.services {
+    padding-bottom: 161px;
+    @include responsive(big-table) {
+        padding-bottom: 80px;
+    }
+    @include responsive(table) {
+        padding-bottom: 50px;
+    }
+    .container {
+    }
+    .awards__logo {
+    }
+    .awards__title {
+    }
+    .awards__text {
+    }
+}
+
+
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 40px;
+    @include responsive(big-table) {
+        gap: 30px;
+    }
+    @include responsive(table) {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 20px;
+    }
+}
+.services__item {
+    padding: 34px 49px 30px 34px;
+    border: 2px solid $color-text;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $color-text;
+        color: $color-bg;
+    }
+    @include responsive(big-table) {
+        padding: 24px 39px 20px 24px;
+    }
+    @include responsive(table) {
+        padding: 14px 29px 10px 14px;
+    }
+}
+.services__item-title {
+    font-size: 31px;
+    line-height: 1.29;
+    letter-spacing: 0.64;
+    margin-bottom: 28px;
+    @include responsive(big-table) {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    @include responsive(table) {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+.services__item-text {
+    font-size: 18px;
+    line-height: 1.77;
+    @include responsive(big-table) {
+        font-size: 15px; 
+    }
+    @include responsive(table) {
+        font-size: 13px; 
+    }
+}
+
+.customer {
+    margin-bottom: 123px;
+    @include responsive(big-table) {
+        margin-bottom: 80px;
+    }
+    @include responsive(table) {
+        margin-bottom: 40px;
+    }
+    .container {
+    }
+    .awards__logo {
+    }
+    .awards__title {
+    }
+    .awards__text {
+    }
+}
+
+.customer__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 32px;
+    @include responsive(table) {
+        gap: 25px;
+    }
+    @include responsive(phone) {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    }
+}
+.customer__item {
+    border: solid 1px #131416;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 43px 0;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #131416;
+        .customer__img {
+            filter: invert(1);
+        }
+    }
+    @include responsive(big-table) {
+        padding: 30px 0;
+    }
+    @include responsive(table) {
+        padding: 25px 0;
+    }
+}
+.customer__img {
+    transition: all 0.3s;
+    display: block;
+}
+
+// ARTICLES STYLES
+.articles {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 136px;
+    .container {
+    }
+    .awards__logo {
+    }
+    .awards__title {
+    }
+    .awards__text {
+        margin-bottom: 95px;
+        @include responsive(big-table) {
+            margin-bottom: 50px;
+        }
+        @include responsive(table) {
+            margin-bottom: 30px;
+        }
+        @include responsive(phone) {
+            margin-bottom: 15px;
+        }
+    }
+    .articles__img {
+        position: absolute;
+        top: 575px;
+        right: -140px;
+        z-index: -1;
+        @include responsive(big-laptop) {
+            display: none;
+        }
+    }
+    @include responsive(big-table) {
+        margin-bottom: 50px;
+    }
+    @include responsive(table) {
+        margin-bottom: 40px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 30px;
+    }
+    
+}
+
+.articles__list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 94px;
+    background-color: $color-bg;
+    @include responsive(big-table) {
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    @include responsive(table) {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    @include responsive(phone) {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+.articles__item {
+    border: 2px solid $color-black;
+    padding: 0px 53px 10px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(2) .articles__title {
+        width: 100%;
+        max-width: 420px;
+    }
+    &:last-child .articles__title {
+        width: 100%;
+        max-width: 400px;
+    }
+    transition: all 0.3s;
+    &:hover {
+        background-image: linear-gradient(#76BA99, #ADCF9F);
+    }
+    @include responsive(big-table) {
+        padding: 0px 14px 8px 14px;
+    }
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+}
+.articles__title-wrapper {
+    margin-right: 20px;
+    @include responsive(table) {
+        margin-right: 10px;
+    }
+    @include responsive(phone) {
+        margin-right: 0;
+    }
+}
+.articles__date {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.28px;
+    color: $color-primary;
+    @include responsive(big-table) {
+        font-size: 13px;
+    }
+    @include responsive(table) {
+        font-size: 10px;
+    }
+    @include responsive(phone) {
+        text-align: center;
+    }
+}
+.articles__title {
+    font-size: 23px;
+    line-height: 1.39;
+    letter-spacing: 0.48px;
+    @include responsive(big-table) {
+        font-size: 20px;
+    }
+    @include responsive(table) {
+        font-size: 15px;
+    }
+    @include responsive(phone) {
+        text-align: center;
+    }
+}
+.articles__text {
+    width: 100%;
+    max-width: 457px;
+    font-size: 16px;
+    line-height: 1.5;
+    @include responsive(big-table) {
+        font-size: 14px;
+    }
+    @include responsive(table) {
+        font-size: 12px;
+    }
+    @include responsive(phone) {
+        text-align: center;
+    }
+}
+.articles__btn {
+    display: block;
+    border: 2px solid $color-text;
+    background-color: $color-text;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: $color-white;
+    padding: 12px 0px 14px 0px;
+    transition: all 0.3s;
+    &:hover {
+        background-color: transparent;
+        color: $color-text;
+    }
+    @include responsive(table) {
+        font-size: 15px;
+    }
+}
+
+// SUBSCRIBE STYLES
+.subscribe {
+    padding: 60px 0;
+    background-color: #e6e3de;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(phone) {
+            flex-direction: column;
+        }
+    }
+    @include responsive(big-table) {
+        padding: 50px 0;
+    }
+    @include responsive(table) {
+        padding: 40px 0;
+    }
+}
+
+.subscribe__title {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.4;
+    letter-spacing: 0.48px;
+    @include responsive(big-table) {
+        font-size: 20px;
+    }
+    @include responsive(table) {
+        font-size: 16px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 15px;
+    }
+}
+.subscribe__input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.subscribe__form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include responsive(phone) {
+        justify-content: center;
+    }
+}
+.subscribe__input {
+    width: 70%;
+    font-weight: 400;
+    padding: 16px 24px;
+    outline: none;
+    border: 2px solid $color-text;
+    margin-right: 24px;
+    @include responsive(big-table) {
+        padding: 12px 20px;
+    }
+    @include responsive(table) {
+        padding: 8px 16px;
+    }
+    @include responsive(phone) {
+        width: 200px;
+    }
+    @include responsive(litle-phone) {
+        width: 160px;
+    }
+    &::placeholder {
+        font-size: 23px;
+        line-height: 1.4;
+        letter-spacing: 0.48px;
+        color: $color-text;
+        @include responsive(big-table) {
+            font-size: 20px;
+        }
+        @include responsive(table) {
+            font-size: 13px;
+        }
+    }
+}
+.subscribe__btn {
+    background-color: #131416;
+    color: $color-white;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.4;
+    letter-spacing: 0.48px;
+    padding: 8px 11px;
+    border: 2px solid #131416;
+    transition: all 0.3s;
+    &:hover {
+        background-color: transparent;
+        color: #131416;
+    }
+    @include responsive(big-table) {
+        padding: 4px 7px;
+    }
+    @include responsive(table) {
+        padding: 6.5px 12px;
+        font-size: 13px;
+    }
+}

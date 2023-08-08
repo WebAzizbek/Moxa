@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moxa || Home || Akramjonov</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./images/png/site-favi.png" type="image/x-icon">
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.mincss"integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="crossorigin="annymous" referrerpolicy="no-referrer" />
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div class="loader">
+        <img src="https://acegif.com/wp-content/uploads/loading-78.gif" alt="">
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+            <a class="site-logo" href="./index.html">
+                <img class="site-logo-img" src="./images/svg/site-logo.svg" alt="Moxa" width="131" height="32">
+            </a>
+            <ul class="header__list">
+                <!-- ITEM 1 -->
+                <li class="header__item">
+                    <a class="header__link" href="#">Home</a>
+                </li>
+                <!-- ITEM 2 -->
+                <li class="header__item">
+                    <a class="header__link" href="#">About</a>
+                </li>
+                <!-- ITEM 3 -->
+                <li class="header__item">
+                    <a class="header__link" href="#">Contact</a>
+                </li>
+            </ul>
+            <a class="header__btn" href="#"><span>Let's talk</span></a>
+            <script>
+                const btn = document.querySelector('.header__btn');
+                btn.onmousemove = function(e){
+                    const x = e.pageX - btn.offsetLeft;
+                    const y = e.pageY - btn.offsetTop;
+
+                    btn.style.setProperty('--x', x + 'px');
+                    btn.style.setProperty('--y', y + 'px');
+                }
+            </script>
+            <a class="bars-btn" href="#">
+                <img class="bars-btn-img" src="./images/png/bars-btn.png" alt="bars-btn" width="30" height="30">
+            </a>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- RIGHT NAV REMOVE -->
+    <nav class="right-nav remove">
+        <button class="right-nav-btn">
+            <img src="./images/png/cancel.png" alt="" width="20" height="20">
+        </button>
+        <ul class="header__list remove-list">
+            <!-- ITEM 1 -->
+            <li class="header__item">
+                <a class="header__link" href="#">Home</a>
+            </li>
+            <!-- ITEM 2 -->
+            <li class="header__item">
+                <a class="header__link" href="#">About</a>
+            </li>
+            <!-- ITEM 3 -->
+            <li class="header__item">
+                <a class="header__link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- HERO -->
+        <div class="hero">
+            <div class="header__container">
+                <div class="hero__wrapper">
+                    <h1 class="hero__title">HI, I’M TAYLER. A CREATIVE 
+                        <img src="./images/svg/site-vector.svg" alt="" width="40" height="40">
+                        DESIGNER BASED IN LONDON
+                    </h1>
+                    <div class="hero__inner-wrapper">
+                        <p class="hero__text">DESIGN</p>
+                        <img class="hero__star" src="./images/svg/hero-star.svg" alt="hero-star" width="20" height="20">
+                        <p class="hero__text">DEVELOPMENT</p>
+                        <img class="hero__star" src="./images/svg/hero-star.svg" alt="hero-star" width="20" height="20">
+                        <p class="hero__text">WEBFLOW</p>
+                    </div>
+                    <div class="hero__btn-wrapper">
+                        <a class="hero__black-btn site-btn" href="#"><span>Got a project?</span></a>
+                        <script>
+                            const btnS = document.querySelector('.site-btn');
+                            btnS.onmousemove = function(e){
+                                const x = e.pageX - btnS.offsetLeft;
+                                const y = e.pageY - btnS.offsetTop;
+            
+                                btnS.style.setProperty('--x', x + 'px');
+                                btnS.style.setProperty('--y', y + 'px');
+                            }
+                        </script>
+                        <a class="hero__white-btn site-btn" href="#"><span>Let's talk.</span></a>
+                    </div>
+                </div>
+                <div class="hero__img-wrapper">
+                    <div class="hero__circle-wrapper">
+                        <div class="hero__circle-item" style="--i:1"></div>
+                        <div class="hero__circle-item" style="--i:2"></div>
+                        <div class="hero__circle-item" style="--i:3"></div>
+                        <div class="hero__circle-item" style="--i:4"></div>
+                    </div>
+                    <img class="hero__img" src="./images/png/hero-img.png" alt="qora odam">
+                </div>
+            </div>
+        </div>
+        <!-- HERO END -->
+
+        <!-- MASSIVE -->
+        <div class="box-massive">
+            <div class="massive">
+            <!-- ITEM 1 -->
+            <div class="massive__box">
+                <p class="massive__text">DEVELOPMENT</p>
+                <img class="massive__img" src="./images/svg/hero-star.svg" alt="star" width="21" height="21">
+            </div>
+            <!-- ITEM 2 -->
+            <div class="massive__box">
+                <p class="massive__text">STRATEGY</p>
+                <img class="massive__img" src="./images/svg/hero-star.svg" alt="star" width="21" height="21">
+            </div>
+            <!-- ITEM 3 -->
+            <div class="massive__box">
+                <p class="massive__text">PRODUCT DESIGN</p>
+                <img class="massive__img" src="./images/svg/hero-star.svg" alt="star" width="21" height="21">
+            </div>
+            <!-- ITEM 4 -->
+            <div class="massive__box">
+                <p class="massive__text">MOTION GRAPHIC</p>
+                <img class="massive__img" src="./images/svg/hero-star.svg" alt="star" width="21" height="21">
+            </div>
+            <!-- ITEM 5 -->
+            <div class="massive__box">
+                <p class="massive__text">ART DIRECTION</p>
+                <img class="massive__img" src="./images/svg/hero-star.svg" alt="star" width="21" height="21">
+            </div>
+            <!-- ITEM 6 -->
+            <div class="massive__box">
+                <p class="massive__text">DESIGN</p>
+                <img class="massive__img" src="./images/svg/hero-star.svg" alt="star" width="21" height="21">
+            </div>
+            <!-- ITEM 7 -->
+            <div class="massive__box">
+                <p class="massive__text">BRANDING</p>
+                <img class="massive__img" src="./images/svg/hero-star.svg" alt="star" width="21" height="21">
+            </div>
+        </div>
+        </div>
+        <!-- MASSIVE END -->
+
+        <!-- LEAD -->
+        <div class="lead">
+            <div class="container">
+                <div class="lead__text-wrapper">
+                    <!-- ITEM 1 -->
+                    <div class="lead__title-box">
+                        <!-- INNER ITEM 1 -->
+                        <div class="lead__top-title-box">
+                            <p class="lead__top-title">TAYLER</p>
+                            <img class="lead__top-img" src="./images/svg/hero-star.svg" alt="star" width="20" height="20">
+                            <p class="lead__top-title">BARTHHOLD</p>
+                        </div>
+                        <h2 class="lead__title">Lead product designer and art director.</h2>
+                    </div>
+                    <!-- ITEM 2 -->
+                    <div class="lead__text-box">
+                        <p class="lead__text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <p class="lead__center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="lead__age-wrapper">
+                            <!-- ITEM 1 -->
+                            <div class="lead__age-box">
+                                <p class="lead__age-top-text">BORN IN</p>
+                                <p class="lead__age-bottom-text">New York</p>
+                            </div>
+                            <!-- ITEM 2 -->
+                            <div class="lead__age-box">
+                                <p class="lead__age-top-text">EXPERIENCE</p>
+                                <p class="lead__age-bottom-text">7+ Years</p>
+                            </div>
+                            <!-- ITEM 3 -->
+                            <div class="lead__age-box">
+                                <p class="lead__age-top-text">DATE OF BIRTH</p>
+                                <p class="lead__age-bottom-text">27 June 1992</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LEAD LIST -->
+                <ul class="lead__list">
+                    <!-- ITEM 1 -->
+                    <div class="lead__item">
+                        <p class="lead__num">7+</p>
+                        <p class="lead__years">Years of Experience</p>
+                    </div>
+                    <!-- ITEM 2 -->
+                    <div class="lead__item">
+                        <p class="lead__num">50+</p>
+                        <p class="lead__years">Project Completed</p>
+                    </div>
+                    <!-- ITEM 3 -->
+                    <div class="lead__item">
+                        <p class="lead__num">30+</p>
+                        <p class="lead__years">Happy Clients</p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- LEAD END -->
+
+        <!-- AWARDS -->
+        <div class="awards">
+            <div class="container">
+                <img class="awards__logo" src="./images/svg/site-vector.svg" alt="logo" width="40" height="40">
+                <h2 class="awards__title">Awards</h2>
+                <p class="awards__text">REGONITIONS & ACCOIMPLISHMENTS</p>
+                <ul class="awards__list">
+                    <!-- ITEM 1 -->
+                    <li class="awards__item">
+                        <div class="awards__left-wrapper">
+                            <span class="awards__num">1</span>
+                            <div class="awards__title-wrapper">
+                                <p class="awards__top-title">Webflow Awwwards Team</p>
+                                <p class="awards__bottom-title">Runner Up - Webflow Expert Design</p>
+                            </div>
+                        </div>
+                        <p class="awards__date">PRODUCT DESIGN    2022</p>
+                    </li>
+                    <!-- ITEM 2 -->
+                    <li class="awards__item">
+                        <div class="awards__left-wrapper">
+                            <span class="awards__num">2</span>
+                            <div class="awards__title-wrapper">
+                                <p class="awards__top-title">Webflow Awwwards Team</p>
+                                <p class="awards__bottom-title">Runner Up - Webflow Expert Design</p>
+                            </div>
+                        </div>
+                        <p class="awards__date">DEVELOPMENT    2021</p>
+                    </li>
+                    <!-- ITEM 3 -->
+                    <li class="awards__item">
+                        <div class="awards__left-wrapper">
+                            <span class="awards__num">3</span>
+                            <div class="awards__title-wrapper">
+                                <p class="awards__top-title">Webflow Awwwards Team</p>
+                                <p class="awards__bottom-title">Runner Up - Webflow Expert Design</p>
+                            </div>
+                        </div>
+                        <p class="awards__date">BRANDING    2018</p>
+                    </li>
+                    <!-- ITEM 4 -->
+                    <li class="awards__item">
+                        <div class="awards__left-wrapper">
+                            <span class="awards__num">4</span>
+                            <div class="awards__title-wrapper">
+                                <p class="awards__top-title">Webflow Awwwards Team</p>
+                                <p class="awards__bottom-title">Runner Up - Webflow Expert Design</p>
+                            </div>
+                        </div>
+                        <p class="awards__date">PRODUCT DESIGN    2014</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- AWARDS END -->
+
+        <!-- PORTFOLIO -->
+        <div class="portfolio">
+            <div class="container">
+                <img class="awards__logo" src="./images/svg/site-vector.svg" alt="logo" width="40" height="40">
+                <h2 class="awards__title">Portfolio</h2>
+                <p class="awards__text">REGONITIONS & ACCOIMPLISHMENTS</p>
+                <ul class="portfolio__list">
+                    <!-- ITEM 1 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__img-wrapper">
+                            <img class="portfolio__img" src="./images/png/portfolio-one.png" alt="portfolio"
+                            srcset="./images/png/portfolio-one.png 1x,
+                            ./images/png/portfolio-one@2x.png 2x" width="460" height="307">
+                        </div>
+                        <div class="portfolio__text-wrapper">
+                            <a class="portfolio__btn" href="#">Art Direction</a>
+                            <h2 class="portfolio__title">Beautiful and advanced website interfaces</h2>
+                            <a class="portfolio__link" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <!-- ITEM 2 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__img-wrapper">
+                            <img class="portfolio__img" src="./images/png/portfolio-two.png" alt="portfolio"
+                            srcset="./images/png/portfolio-two.png 1x,
+                            ./images/png/portfolio-two@2x.png 2x" width="460" height="307">
+                        </div>
+                        <div class="portfolio__text-wrapper">
+                            <a class="portfolio__btn" href="#">Branding</a>
+                            <h2 class="portfolio__title">Design and extreme programming practice</h2>
+                            <a class="portfolio__link" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <!-- ITEM 3 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__img-wrapper">
+                            <img class="portfolio__img" src="./images/png/portfolio-three.png" alt="portfolio"
+                            srcset="./images/png/portfolio-three.png 1x,
+                            ./images/png/portfolio-three@2x.png 2x" width="460" height="307">
+                        </div>
+                        <div class="portfolio__text-wrapper">
+                            <a class="portfolio__btn" href="#">Web Design</a>
+                            <h2 class="portfolio__title">Nature inspired design</h2>
+                            <a class="portfolio__link" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <!-- ITEM 4 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__img-wrapper">
+                            <img class="portfolio__img" src="./images/png/portfolio-four.png" alt="portfolio"
+                            srcset="./images/png/portfolio-four.png 1x,
+                            ./images/png/portfolio-four@2x.png 2x" width="460" height="307">
+                        </div>
+                        <div class="portfolio__text-wrapper">
+                            <a class="portfolio__btn" href="#">Motion Graphics</a>
+                            <h2 class="portfolio__title">Design & concept at work.</h2>
+                            <a class="portfolio__link" href="#">Read More</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- PORTFOLIO END -->
+
+        <!-- SERVICES -->
+        <div class="services">
+            <div class="container">
+                <img class="awards__logo" src="./images/svg/site-vector.svg" alt="logo" width="40" height="40">
+                <h2 class="awards__title">Services</h2>
+                <p class="awards__text">REGONITIONS & ACCOIMPLISHMENTS</p>
+                <ul class="services__list">
+                    <!-- ITEM 1 -->
+                    <div class="services__item">
+                        <p class="services__item-title">Web Design</p>
+                        <p class="services__item-text">Every single project is a challenge that we accept eagerly. Let’s implement innovative ideas together!</p>
+                    </div>
+                    <!-- ITEM 2 -->
+                    <div class="services__item">
+                        <p class="services__item-title">Product Design</p>
+                        <p class="services__item-text">Every single project is a challenge that we accept eagerly. Let’s implement innovative ideas together!</p>
+                    </div>
+                    <!-- ITEM 3 -->
+                    <div class="services__item">
+                        <p class="services__item-title">UI/UX Design</p>
+                        <p class="services__item-text">Every single project is a challenge that we accept eagerly. Let’s implement innovative ideas together!</p>
+                    </div>
+                    <!-- ITEM 4 -->
+                    <div class="services__item">
+                        <p class="services__item-title">Art Direction</p>
+                        <p class="services__item-text">Every single project is a challenge that we accept eagerly. Let’s implement innovative ideas together!</p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- SERVICES END -->
+
+        <!-- CUSTOMER -->
+        <div class="customer">
+            <div class="container">
+                <img class="awards__logo" src="./images/svg/site-vector.svg" alt="logo" width="40" height="40">
+                <h2 class="awards__title">Services</h2>
+                <p class="awards__text">REGONITIONS & ACCOIMPLISHMENTS</p>
+                <ul class="customer__list">
+                    <!-- ITEM 1 -->
+                    <li class="customer__item">
+                        <img class="customer__img" src="./images/svg/customer-one.svg" alt="brand" width="72" height="16">
+                    </li>
+                    <!-- ITEM 2 -->
+                    <li class="customer__item">
+                        <img class="customer__img" src="./images/svg/customer-two.svg" alt="brand" width="122" height="12">
+                    </li>
+                    <!-- ITEM 3 -->
+                    <li class="customer__item">
+                        <img class="customer__img" src="./images/svg/customer-three.svg" alt="brand" width="104" height="12">
+                    </li>
+                    <!-- ITEM 4 -->
+                    <li class="customer__item">
+                        <img class="customer__img" src="./images/svg/customer-four.svg" alt="brand" width="98" height="16">
+                    </li>
+                    <!-- ITEM 5 -->
+                    <li class="customer__item">
+                        <img class="customer__img" src="./images/svg/customer-three.svg" alt="brand" width="104" height="12">
+                    </li>
+                    <!-- ITEM 6 -->
+                    <li class="customer__item">
+                        <img class="customer__img" src="./images/svg/customer-one.svg" alt="brand" width="72" height="16">
+                    </li>
+                    <!-- ITEM 7 -->
+                    <li class="customer__item">
+                        <img class="customer__img" src="./images/svg/customer-four.svg" alt="brand" width="98" height="16">
+                    </li>
+                    <!-- ITEM 8 -->
+                    <li class="customer__item">
+                        <img class="customer__img" src="./images/svg/customer-two.svg" alt="brand" width="122" height="12">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- CUSTOMER END -->
+
+        <!-- ARTICLES -->
+        <div class="articles">
+            <div class="container">
+                <img class="awards__logo" src="./images/svg/site-vector.svg" alt="logo" width="40" height="40">
+                <h2 class="awards__title">Articles</h2>
+                <p class="awards__text">REGONITIONS & ACCOIMPLISHMENTS</p>
+                <ul class="articles__list">
+                    <!-- ARTICLES ITEM 1 -->
+                    <li class="articles__item">
+                        <div class="articles__title-wrapper">
+                            <p class="articles__date">DESIGN  /  April 28, 2022</p>
+                            <p class="articles__title">Why I moved from Wordpress to Webflow</p>
+                        </div>
+                        <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </li>
+                    <!-- ARTICLES ITEM 2 -->
+                    <li class="articles__item">
+                        <div class="articles__title-wrapper">
+                            <p class="articles__date">DESIGN  /  April 26, 2022</p>
+                            <p class="articles__title">What did i learn from doing 50+ design sprints</p>
+                        </div>
+                        <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </li>
+                    <!-- ARTICLES ITEM 3 -->
+                    <li class="articles__item">
+                        <div class="articles__title-wrapper">
+                            <p class="articles__date">BUSINESS & OFFICE  /  April 26, 2022</p>
+                            <p class="articles__title">Fostering professional growth in your company</p>
+                        </div>
+                        <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </li>
+                </ul>
+                <a class="articles__btn" href="#">Browse Articles</a>
+            </div>
+            <img class="articles__img" src="./images/svg/articles-circle.svg" alt="star" width="240" height="240">
+        </div>
+        <!-- ARTICLES END -->
+
+        <!-- SUBSCRIBE -->
+        <div class="subscribe">
+            <div class="container">
+                <h3 class="subscribe__title">Subscribe to our newsletter</h3>
+                <div class="subscribe__input-wrapper">
+                    <form class="subscribe__form" action="">
+                        <input class="subscribe__input" type="email" placeholder="Email Address" required>
+                        <button class="subscribe__btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- SUBSCRIBE END -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__nav">
+                <a class="footer__logo" href="./index.html">
+                    <img class="footer__logo-img" src="./images/svg/footer-nav-logo.svg" alt="star" width="32" height="32">
+                </a>
+                <ul class="footer__list">
+                    <!-- FOOTER ITEM 1 -->
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Style Guide</a>
+                    </li>
+                    <!-- FOOTER ITEM 2 -->
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Licence</a>
+                    </li>
+                    <!-- FOOTER ITEM 3 -->
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Changelog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text">© Made by Portfolio Template & powered by Flowbase</p>
+                <div class="footer-bottom__apk-wrapper">
+                    <!-- FOOTER BOTTOM ITEM 1 -->
+                    <a href="#" class="footer-bottom__link">
+                        <img class="footer-bottom__img" src="./images/svg/footer-bottom-one.svg" alt="IN" width="24" height="24">
+                    </a>
+                    <!-- FOOTER BOTTOM ITEM 2 -->
+                    <a href="#" class="footer-bottom__link">
+                        <img class="footer-bottom__img" src="./images/svg/footer-bottom-two.svg" alt="TWITER" width="24" height="24">
+                    </a>
+                    <!-- FOOTER BOTTOM ITEM 1 -->
+                    <a href="#" class="footer-bottom__link">
+                        <img class="footer-bottom__img" src="./images/svg/footer-bottom-three.svg" alt="INSTAGRAM" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER END -->
+
+    <script src="./app.js"></script>
+</body>
+</html>
